@@ -1,0 +1,3 @@
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/obj/Debug/netcoreapp2.0/small-assignment-2.csproj.CoreCompileInputs.cache
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/obj/Debug/netcoreapp2.0/small-assignment-2.AssemblyInfoInputs.cache
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/obj/Debug/netcoreapp2.0/small-assignment-2.AssemblyInfo.cs

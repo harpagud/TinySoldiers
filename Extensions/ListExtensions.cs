@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using template.Models;
+using TinySoldiers.Models.DTOs;
+using TinySoldiers.Models;
 
-namespace template.Extensions
+namespace TinySoldiers.Extensions
 {
     public static class ListExtensions
     {
