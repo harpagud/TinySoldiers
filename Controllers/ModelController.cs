@@ -13,7 +13,7 @@ namespace TinySoldiers.Controllers
     {  
         // GET api/models 
         [HttpGet("{pageNumber:int}","{pageSize:int}")]
-        public Envelope GetAllModels(int pageNumber, int pageSize)
+        public IactionResult GetAllModels(int pageNumber, int pageSize)
         {
             
             /*
@@ -28,7 +28,7 @@ namespace TinySoldiers.Controllers
 
         //GET api/models/11 should give me status 404 not found
         [HttpGet("{id:int}", Name ="GetModelById")]
-        public ModelDetailsDTO GetByID(int id)
+        public IactionResult GetByID(int id)
         {
             /*
             The route GetModelById() should be implemented like this:
