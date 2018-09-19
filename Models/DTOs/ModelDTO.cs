@@ -1,6 +1,6 @@
 namespace TinySoldiers.Models.DTOs
 {
-    public class ModelDetailsDTO
+    public class ModelDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
