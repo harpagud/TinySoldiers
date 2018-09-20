@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using template.Models;
+using TinySoldiers.Models.DTOs;
 
 namespace template.Extensions
 {

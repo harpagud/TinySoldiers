@@ -1,4 +1,4 @@
-using Assignment1.Models;
+//using Assignment1.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,9 +12,9 @@ namespace TinySoldiers.Controllers
     public class ModelController : Controller
     {  
         // GET api/models 
-        [HttpGet("{pageNumber:int}","{pageSize:int}")]
-        public IactionResult GetAllModels(int pageNumber, int pageSize)
-        {
+       // [HttpGet("{pageNumber:int}","{pageSize:int}")]
+        //public IactionResult GetAllModels(int pageNumber, int pageSize)
+        //{
             
             /*
             The route GetAllModels() should be implemented like this:
@@ -24,12 +24,12 @@ namespace TinySoldiers.Controllers
             resides within the Models/ folder) of ModelDTO
             • The _links property found in HyperMediaModel should be properly filled out
              */
-        }
+        //}
 
         //GET api/models/11 should give me status 404 not found
-        [HttpGet("{id:int}", Name ="GetModelById")]
-        public IactionResult GetByID(int id)
-        {
+        //[HttpGet("{id:int}", Name ="GetModelById")]
+        //public IactionResult GetByID(int id)
+        //{
             /*
             The route GetModelById() should be implemented like this:
             • It receives an id as URL parameter and it should be used to find the corresponding
@@ -37,6 +37,6 @@ namespace TinySoldiers.Controllers
             • It should return an ModelDetailsDTO
             • The _links property found in HyperMediaModel should be properly filled out
             */
-        }
+        //}
     } 
 }
