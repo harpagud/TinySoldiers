@@ -5,50 +5,62 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using TinySoldiers.Models.DTOs;
 
 namespace TinySoldiers.Controllers
 {
     
-    //[Route("api/models")]
+    [Route("api/models")]
     public class ModelController : Controller
     {  
         // GET api/models 
         
-        [HttpGet("")]
-        public IActionResult GetAllModels([FromQuery]int pageNumber = 1, [FromQuery]int pageSize = 10)
+        [HttpGet]
+        [Route("")]
+        public IActionResult GetAllModels([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
         {
 
+            var lang = Request.Headers["Accept-Language"];
+            
+            if(lang != "de-DE")
+            {
+                lang = "en-US";
+            }
 
-            /*
-            The route GetAllModels() should be implemented like this:
-            • It can receive two query parameters called: pageNumber (default 1) and pageSize
-            (default 10)
-            • It should use those query parameters to page the data and return an Envelope (it
-            resides within the Models/ folder) of ModelDTO
-            • The _links property found in HyperMediaModel should be properly filled out
-             */
+            var list = DataContext.Models.ToLightWeight(lang);
+            list.ForEach(m => m.Links.AddReference("self", $"http://localhost:5000/api/models/{m.Id}"));
+            
+            var envelope = new Envelope<ModelDTO>()
+            {
+                Items = list,
+                PageNumber = pageNumber,
+                PageSize = pageSize
+            };
 
-             return Ok(200);
+             return Ok(envelope);
         }
 
-      
-        
+    
         //GET api/models/11 should give me status 404 not found
 
-        [HttpGet("model/{id}")]
+        [HttpGet]
+        [Route("{id:int}")]
         public IActionResult GetByID(int id)
         {
+            var lang = Request.Headers["Accept-Language"];
 
-            /*
-            The route GetModelById() should be implemented like this:
-            • It receives an id as URL parameter and it should be used to find the corresponding
-            model based on that id
-            • It should return an ModelDetailsDTO
-            • The _links property found in HyperMediaModel should be properly filled out
-            */
-
-            return Ok(200);
+            if(lang != "de-DE")
+            {
+                lang = "en-US";
+            } 
+            
+            //in ListExtensions, the Accept-Language header is set to en-US by default 
+            //so if the header is invalid or not either de-DE or en-US then it's set to en-US
+            var model = DataContext.Models.ToDetails(lang).FirstOrDefault(m => m.Id == id);
+            
+            model.Links.AddReference("self", $"http://localhost:5000/api/models/{model.Id}");
+        
+            return Ok(model);
         }
     }
 } 
