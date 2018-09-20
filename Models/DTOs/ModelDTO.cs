@@ -1,7 +1,7 @@
 namespace TinySoldiers.Models.DTOs
 {
-    public class ModelDTO
-    {
+    public class ModelDTO : HyperMediaModel
+    {   
         public int Id { get; set; }
         public string Name { get; set; }
         public string Race { get; set; }

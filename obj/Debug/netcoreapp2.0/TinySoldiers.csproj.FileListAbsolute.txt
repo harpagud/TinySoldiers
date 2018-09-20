@@ -1,0 +1,10 @@
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/obj/Debug/netcoreapp2.0/TinySoldiers.csproj.CoreCompileInputs.cache
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/obj/Debug/netcoreapp2.0/TinySoldiers.AssemblyInfoInputs.cache
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/obj/Debug/netcoreapp2.0/TinySoldiers.AssemblyInfo.cs
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/bin/Debug/netcoreapp2.0/TinySoldiers.deps.json
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/bin/Debug/netcoreapp2.0/TinySoldiers.runtimeconfig.json
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/bin/Debug/netcoreapp2.0/TinySoldiers.runtimeconfig.dev.json
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/bin/Debug/netcoreapp2.0/TinySoldiers.dll
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/bin/Debug/netcoreapp2.0/TinySoldiers.pdb
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/obj/Debug/netcoreapp2.0/TinySoldiers.dll
+/Users/harpahreinsdottir/Documents/HR-haust-2018/Vefþjónustur/SmallAssignment2/TinySoldiers/TinySoldiers/obj/Debug/netcoreapp2.0/TinySoldiers.pdb

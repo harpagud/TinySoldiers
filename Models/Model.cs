@@ -1,4 +1,4 @@
-namespace template.Models
+namespace TinySoldiers.Models
 {
     public class Model : HyperMediaModel
     {
